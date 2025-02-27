@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "input-form": "npx playwright test tests/inputForm.spec.ts --project=chromium",
-    "interact-file": "npx playwright test tests/interactFile.spec.ts --project=chromium",
+    "input-form": "npx playwright test tests/input-form.spec.ts --project=chromium",
+    "interact-file": "npx playwright test tests/interact-file.spec.ts --project=chromium",
     "firefox": "npm run clean && npx playwright test --project=firefox",
     "chromium": "npm run clean && npx playwright test --project=chromium",
     "allure-report": "allure generate --clean ./allure-results -o ./allure-report && allure open ./allure-report/",
