@@ -1,0 +1,26 @@
+{
+  "name": "playwright-ui-testing-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "input-form": "npx playwright test tests/inputForm.spec.ts --project=chromium",
+    "interact-file": "npx playwright test tests/interactFile.spec.ts --project=chromium",
+    "firefox": "npm run clean && npx playwright test --project=firefox",
+    "chromium": "npm run clean && npx playwright test --project=chromium",
+    "allure-report": "allure generate --clean ./allure-results -o ./allure-report && allure open ./allure-report/",
+    "reinstall": "npx playwright install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^9.5.0",
+    "@playwright/test": "^1.50.1",
+    "@types/node": "^22.13.5",
+    "allure-playwright": "^3.2.0"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.32.2"
+  }
+}
