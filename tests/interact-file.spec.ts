@@ -30,7 +30,7 @@ test("upload file", async ({ page }) => {
     const fileChooserPromise = page.waitForEvent("filechooser");
     await uploadFile.uploadFileBtn.click();
     const fileChooser = await fileChooserPromise;
-    await fileChooser.setFiles("data/path.jpeg");
+    await fileChooser.setFiles("mock-data/path.jpeg");
   });
 
   await test.step("verify there is a successful message after uploading", async () => {
